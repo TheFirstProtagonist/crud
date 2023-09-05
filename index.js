@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGO_URI, {
 let db = mongoose.connection;
 
 db.on('error', (error) => {
-    console.log(error); 
+    console.log(error);
 });
 
 db.once('open', () => {
